@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog</title>
+    <link>https://vady112.github.io/post/</link>
+    <description>Recent content in Posts on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/vady112&#34;&gt;Emir Ribic&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Mon, 04 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vady112.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Managing our secrets with Vault.</title>
+      <link>https://vady112.github.io/post/blog/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://vady112.github.io/post/blog/</guid>
+      <description>We are using Ansible for intra-service orchestration and Hashicorp&amp;rsquo;s Vault to Manage the the secrets. With ansible-modules-hashivault its easy to read the data from ansible by just using ansible lookup module. database_password: &amp;quot;{{lookup(&#39;hashivault&#39;, &#39;production&#39;, &#39;database_passowrd&#39;)}}&amp;quot;
+How are we writing seccrets to Vault using Ansible?
+We are using json file to upload the multiple secrets to the Vault. As we are pushing our Ansible playbooks to github we dint want to push plain text files to github, so we opted to encrypt the file using Ansible vault before pushing it to github.</description>
+    </item>
+    
+  </channel>
+</rss>
