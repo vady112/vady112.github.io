@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://vady112.github.io//sitemap.xml
